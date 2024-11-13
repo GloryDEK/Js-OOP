@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <h1>GloryShop</h1>
+<br>
+<div class="container">
+     <div class="items">
+        <div class="row"> <!-- Ajouter de la classe row afin de mettre en place les classes responsives -->
+            <div class="col-md-4"> <!-- Subdivision de l'ecran de maniere responsive -->
+                <div class="article1" id="article1">
+                    <h5>Yellow-bag</h5> <!-- Rapide description de l'image -->
+                    <img src="/image/small-purse-studio-still-life.jpg" alt="Sac à main" class="img-fluid"> <!-- insertion de l'image -->
+                    <p class="price">Prix: 35 € </p>
+                    <button class="fa-sharp-duotone fa-solid fa-plus"></button> <!-- appelle aux icones -->
+                    <a href="#" class="icon"><i class="fa-solid fa-heart"></i></a> <!-- icone cliquable -->
+                    <input type="text" class="qtite" value="1" disabled ="">  <!-- initialisation de la qtite a 1 -->
+                    <button class="fa-sharp-duotone fa-solid fa-minus"></button>
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <h6>Total : <span class="sum" id="sum3"></span> </h6>
+                    <br>
+                    <button class="button">Remove</button>
+                </div>
+            </div>
+
+                        <!--Processus repete pour la suite-->
+
+            <div class="col-md-4">
+                <div class="article2" id="article2">
+                    <h5>Green-bag</h5>
+                    <img src="/image/beautiful-elegance-luxury-fashion-green-handbag.jpg" alt="sac a main" class="img-fluid">
+                    <p class="price">Prix: 22 € </p>
+                    <button class="fa-sharp-duotone fa-solid fa-plus"></button>
+                    <a href="#" class="icon"><i class="fa-solid fa-heart"></i></a> 
+                    <input type="text" class="qtite" value="1" disabled ="">
+                    <button class="fa-sharp-duotone fa-solid fa-minus"></button>
+                    <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                    <h6>Total : <span class="sum" id="sum2"></span> </h6>
+                    <br>
+                    <button class="button">Remove</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="article3" id="article3">
+                        <h5>Woman-bag</h5>
+                        <img src="/image/view-women-s-purse-tiles-with-mediterranean-aesthetics.jpg" alt="sac a main" class="img-fluid"> 
+                        <p class="price">Prix: 16 € </p>
+                        <button class="fa-sharp-duotone fa-solid fa-plus"></button>
+                        <a href="#" class="icon"><i class="fa-solid fa-heart"></i></a> 
+                        <input type="text" class="qtite" value="1" disabled ="">
+                        <button class="fa-sharp-duotone fa-solid fa-minus"></button>
+                        <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <h6>Total : <span class="sum" id="sum3"></span> </h6>
+                        <br>
+                        <button class="button">Remove</button>
+                 </div>
+             </div>
+        </div>
+<br>
+<br>
+        <div class="Prix-Total">
+            <div class="P-Total"  id="total">
+            <h4>Prix Total: <span>€0.00</span> </h4>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <script src="cart1.js"></script>
+</body>
+</html>
